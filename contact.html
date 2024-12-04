@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Freshy Fruits - Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <style>
+        body,
+        html {
+            height: 100vh;
+            margin: 5 px;
+            background-color:bisque;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-warning bg-warning fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo1.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-top">
+                <b class="text-danger">Freshy</b><b class="text-success">Fruits</b>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2 my-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginModalLabel">Login to Freshy Fruits</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Login</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SignUpModalLabel">Get an Freshy Fruits account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword"
+                                placeholder="Confirm password" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Sign Up</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container my-2">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="form-container bg-warning">
+                    <h2 class="text-center mb-4">Contact Us</h2>
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName"
+                                    placeholder="Enter your first name" required>
+                            </div>
+                            <div class="col">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reason" class="form-label">Reason for Contact</label>
+                            <textarea class="form-control" id="reason" rows="3"
+                                placeholder="Your message or reason for contact" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class=" text-center text-lg-start  ">
+        <div class="container p-4">
+          <div class="row justify-content-center text-center">
+    
+            <!-- Column 1: Brand Icon and Information (Vertically Centered) -->
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0 d-flex flex-column align-items-center">
+              <!-- Icon or Logo -->
+    
+              <a class="navbar-brand" href="#">
+                <img src="logo1.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-center mb-2">
+                <h4 class="mb-0"><b class="text-danger">Freshy</b><b class="text-success">Fruits</b></h4>
+              </a>
+              <!-- Brand Information -->
+              <div>
+                <p class="text-muted mb-0 text-dark">
+                  At Freshy fruits, we provide fresh, high-quality fruits sourced directly from trusted farmers. Our mission
+                  is to make healthy, delicious fruits accessible to everyone while supporting sustainable agriculture.
+                  Discover nature's finest produce with us!
+    
+                </p>
+              </div>
+            </div>
+    
+            <!-- Column 2: Explore Section -->
+            <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+              <h5 class="text-"><b>Quick Info </b>
+                <hr>
+              </h5>
+              <li><strong class="text-dark">Delivery Information:</strong></li>
+        <li><span class="text-dark">We deliver fresh fruits within 24-48 hours, depending on your location.</span></li>
+        <li><span class="text-dark">Delivery available Monday to Saturday, from 9:00 AM to 6:00 PM.</span></li>
+            </div>
+            <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+              <h5 class="text-dark"><b>Stote info</b>
+                <hr>
+              </h5>
+              <ul class="list-unstyled mb-0">
+                <li><strong class="text-dark">Store Information:</strong></li>
+                <li><span class="text-dark">Open Hours: Monday - Sunday, 9:00 AM - 6:00 PM</span></li>
+                <li><span class="text-dark">Closed on Sundays and public holidays</span></li>
+            
+                
+            </ul>
+            
+            </div>
+            <!-- Column 2: Explore Section -->
+            <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+              <h5 class="text-dark"><b>Location</b>
+                <hr>
+              </h5>
+              <ul style="list-style-type: none; padding: 0;">
+                <li>&#128222; (+91)12345678909 </li> <!-- Phone icon -->
+                <li>&#9993;info@FreshyFruits.com</li> <!-- Email icon -->
+                <li>&#128205;45, Kalyan Nagar, Pune, 123445, India</li> <!-- Location icon -->
+              </ul>
+            </div>
+    
+    
+            <!-- Column 3: Newsletter Subscription -->
+            <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-dark"> <b>Subscribe </b>
+                <hr>
+              </h5>
+              <form class="d-flex justify-content-center">
+                <input type="email" class="form-control" placeholder="Enter your email" style="max-width: 200px;" />
+                <br>
+                <button class="btn btn-warning ms-2" type="submit">
+                  Subscribe
+                </button>
+              </form>
+              <small class="text-muted d-block mt-2">Get the latest fruit updates!</small>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="text-center p-3 bg-dark text-light">
+          © 2024 FreshyFruits - All Rights Reserved
+        </div>
+      </footer>
+     <script src="http://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
